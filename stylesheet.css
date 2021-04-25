@@ -3,6 +3,7 @@ header, footer{
     background: #73AD21;
     text-align: center;
     padding: 25px;
+    margin: 10px;
   }
   img{
     float: right;
