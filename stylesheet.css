@@ -1,0 +1,11 @@
+header, footer{
+    border-radius: 15px;
+    background: #73AD21;
+    text-align: center;
+    padding: 25px;
+  }
+  img{
+    float: right;
+    margin-top: -50px;
+    margin-right: 20px;
+  }
