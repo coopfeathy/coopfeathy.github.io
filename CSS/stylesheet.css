@@ -2,10 +2,14 @@ header, footer{
     border-radius: 15px;
     background: #73AD21;
     text-align: center;
-    padding: 25px;
-    margin: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
   img{
     margin-top: -50px;
     margin-right: 20px;
   }
+header, footer, main{
+  margin: 0 auto;
+  max-width: 800px;
+}
