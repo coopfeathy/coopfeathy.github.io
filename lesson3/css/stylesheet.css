@@ -1,0 +1,15 @@
+header, footer{
+    background: #f1ff2a;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+main{
+    padding: 20px;
+}
+
+@media screen and (max-width: 500px) {
+    a {
+      display: block;
+    }
+  }
