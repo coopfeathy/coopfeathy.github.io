@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Goblin+One&family=Itim&display=swap');
+
 header, footer{
     background: #f1ff2a;
     text-align: center;
@@ -6,6 +8,12 @@ header, footer{
 }
 main{
     padding: 20px;
+}
+.goblinone{
+  font-family: 'Goblin One', cursive;
+}
+.itim{
+  font-family: 'Itim', cursive;
 }
 
 @media screen and (max-width: 500px) {
