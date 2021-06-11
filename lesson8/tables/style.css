@@ -1,0 +1,40 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table, th, td{
+    border: 1px solid rgb(178,186,188);
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+}
+thead, tfoot{
+    background-color: rgb(128,184,193);
+}
+
+
+table tbody tr {background: rgb(98,141,165);}
+table tbody tr:nth-of-type(2) {background: rgb(231,240,237);}
+table tbody tr:nth-of-type(3) {background: rgb(231,255,236);}
+table tbody tr:nth-of-type(4) {background: rgb(231,240,237);}
+table tbody tr:nth-of-type(5) {background: rgb(231,255,236);}
+table tbody tr:nth-of-type(6) {background: rgb(231,240,237);}
+table tbody tr:nth-of-type(7) {background: rgb(231,255,236);}
+
+.color{
+    background: rgb(98,141,165);
+    color: white;}
+
+.big{
+    font-size: 25px;
+}
+
+.slant{
+    font-style: italic;
+}
+
+.white{
+    color: white;
+}
