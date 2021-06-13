@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Cooper Feathersone">
+    <meta name="description" content="Gallery Page for Feather Weather">
+    <title>Feather Weather Gallery Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen"/>
+</head>
+
+<body>
+    <header>
+        <picture>
+            <img src="images/logo.png" alt="The site logo">
+        </picture>
+        <section class="headings">
+            <h1>Feather Weather</h1>
+            <div class="m">Weather to you from above and beyond!</div>
+        </section>
+        <a class="icon" onclick="toggleNav(); menu(this);">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </a>
+    </header>
+    <nav id="myTopnav" class="topnav">
+        <a href="">Home</a>
+        <a href="preston.html">Preston</a>
+        <a href="">Soda Springs</a>
+        <a href="">Fish Haven</a>
+        <a href="stormcenter.html">Storm Center</a>
+        <a href="gallery.html" class="active">Gallery</a>
+    </nav>
+
+    <main class="main2">
+        <section>
+            <img data-src="images/gallery1.jpeg" alt="Rainbow showing through the clouds">
+            <p>Rainbow showing through the clouds</p>
+        </section>
+        <section>
+            <img data-src="images/gallery2.jpeg" alt="Lightning in the storm">
+            <p>Lightning in the storm</p>
+        </section>
+        <section>
+            <img data-src="images/gallery3.jpeg" alt="Couds above the water">
+            <p>Clouds above the water</p>
+        </section>
+        <section>
+            <img data-src="images/gallery4.jpeg" alt="Tornado on the farm">
+            <p>Tornado on the farm</p>
+        </section>
+        <section>
+            <img data-src="images/gallery5.jpeg" alt="Big cloud behind the water tower">
+            <p>Big cloud behind the water tower</p>
+        </section>
+        <section>
+            <img data-src="images/gallery6.jpeg" alt="Sun shining through the clouds">
+            <p>Sun shining through the clouds</p>
+        </section>
+        <section>
+            <img data-src="images/gallery7.jpeg" alt="Hay bales on a sunny day">
+            <p>Hay bales on a sunny day</p>
+        </section>
+        <section>
+            <img data-src="images/gallery8.jpeg" alt="Rainbow in the dark">
+            <p>Rainbow in the dark</p>
+        </section>
+        <section>
+            <img data-src="images/gallery9.jpeg" alt="Sunset in the west">
+            <p>Sunset in the west</p>
+        </section>
+
+
+    </main>
+
+    <footer>
+        &copy;Feather Weather | Attributions | Cooper Featherstone
+        <br>
+        <span id="date"></span>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>  
