@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+header, footer{
+    background: #3699eb;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cards {
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr;
+	font-size: 0.8rem;
+}
+
+.cards section {
+	margin: 0.5rem;
+	border: 1px solid #bbb;
+	padding: 0 1rem;
+	background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards section img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #bbb;
+}
+
+@media only screen and (min-width: 25em) {
+    .cards {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+/* Tablet Views ******************************/
+@media only screen and (min-width: 37.5em) {
+	.cards {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+/* Desktop Views ****************************/
+@media only screen and (min-width: 60em) {
+	.cards {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}
