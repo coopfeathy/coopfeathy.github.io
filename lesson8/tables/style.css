@@ -1,17 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@0;1&display=swap');
+
+
 body{
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Ubuntu', sans-serif;
 }
 table, th, td{
     border: 1px solid rgb(178,186,188);
     border-collapse: collapse;
     padding: 10px;
     text-align: center;
+    font-family: 'Ubuntu', sans-serif;
 }
 thead, tfoot{
     background-color: rgb(128,184,193);
+    font-family: 'Ubuntu', sans-serif;
 }
 
 
@@ -23,11 +29,12 @@ table tbody tr:nth-of-type(5) {background: rgb(231,255,236);}
 table tbody tr:nth-of-type(6) {background: rgb(231,240,237);}
 table tbody tr:nth-of-type(7) {background: rgb(231,255,236);}
 
-.color{
+td:hover{
     background: rgb(98,141,165);
-    color: white;}
+    color: white;
+}
 
-.big{
+th:nth-child(1){
     font-size: 25px;
 }
 
@@ -35,6 +42,6 @@ table tbody tr:nth-of-type(7) {background: rgb(231,255,236);}
     font-style: italic;
 }
 
-.white{
+table tbody tr:first-child{
     color: white;
 }
