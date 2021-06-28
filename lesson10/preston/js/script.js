@@ -136,7 +136,7 @@ fetch(requestURL)
 
 
 //Preston
-const weatherURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=3e08552e49dac3ae3cad2390c4518b7c";
+const weatherURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=3e08552e49dac3ae3cad2390c4518b7c";
 fetch(weatherURL)
   .then((response) => response.json())
   .then((jsObject) => {
