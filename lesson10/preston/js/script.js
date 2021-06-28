@@ -150,7 +150,7 @@ fetch(weatherURL)
     document.querySelector('#windchill').innerHTML = Math.round(windchill) + "°F";
 });
 
-
+ 
 //gets forecast
 const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=3e08552e49dac3ae3cad2390c4518b7c";
 fetch(forecastURL)
