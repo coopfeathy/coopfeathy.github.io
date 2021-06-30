@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Cooper Feathersone">
+    <meta name="description" content="Storm Center Page for Feather Weather">
+    <title>Feather Weather Storm Center Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen"/>
+</head>
+
+<body>
+    <header>
+        <picture>
+            <img src="images/logo.png" alt="The site logo">
+        </picture>
+        <section class="headings">
+            <h1>Feather Weather</h1>
+            <div class="m">Weather to you from above and beyond!</div>
+        </section>
+        <a class="icon" onclick="toggleNav(); menu(this);">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </a>
+    </header>
+    <nav id="myTopnav" class="topnav">
+        <a href="home.html">Home</a>
+        <a href="preston.html">Preston</a>
+        <a href="sodasprings.html">Soda Springs</a>
+        <a href="fishhaven.html">Fish Haven</a>
+        <a href="stormcenter.html" class="active">Storm Center</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <main class="main3">
+        <h2>Report a weather event</h2>
+
+            <form action="thanks.html" method='get'>
+                <!-- action to thank you page -->
+
+                <fieldset>
+                    <legend>Your Information</legend>
+                    <label> Full Name<span class='req'>*Required</span>
+                        <br>
+                        <input type="text" pattern="[a-zA-Z]{5,}" name="name" title="minimum 5 letters" required>
+                    </label>
+                    <br>
+                    <label> E-mail
+                        <br>
+                        <input type="email" placeholder="info@weatherecho.com" name="email">
+                    </label>
+                    <br>
+                    <label> Phone Number <span class='req'>*Required</span>
+                        <br>
+                        <input type="tel" placeholder="123-456-7890" name="phone" required>
+                    </label>
+                    <br>
+                    <label> Zip Code <span class='req'>*Required</span>
+                        <br>
+                        <input type="number" placeholder="12345" name="zip" required>
+                        <br>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Storm Information</legend>
+                    <label>Storm Date
+                        <br>
+                        <input type="date" name="date">
+                        <br>
+                    </label>
+                    <br>
+                    <label>Storm Type
+                        <br>
+                        <select name="browsers" id="selectbrowser" onchange="selectResponse()">
+                            <option value="select" disabled selected>Select a Storm Type</option>
+                            <option value="flash-flood">Flash Flood</option>
+                            <option value="hail">Hail</option>
+                            <option value="hurricane">Hurricane</option>
+                            <option value="thunderstorm">Thunderstorm</option>
+                            <option value="tornado">Tornado</option>
+                        </select>
+                    </label>
+
+                    <br>
+                    <label>Storm Severity
+                        <br>
+                        <input type="range" name="rating" value="5" min="1" max="10" step="1" list="tickmarks"
+                            oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue"> 5 </span>
+                    </label>
+                    <datalist id="tickmarks">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                    </datalist>
+                    <br>
+                    <label>Storm Region
+                        <br>
+                        <input list="region" name="storm-region">
+                    </label>
+                    <datalist id="region">
+                        <option value="select" disabled selected>Select :</option>
+                        <option value="Preston">
+                        <option value="Soda Spring">
+                        <option value="Fish Haven">            
+                    </datalist>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <div>User in Danger (Choose one)
+                        <br>
+                        <div class="selection">
+                            <input type="radio" name="danger" value="yes" class="ratio" checked>
+                            <label>Yes</label>
+                        </div>
+                        <div class="selection">
+                            <input type="radio" name="danger" value="maybe" class="ratio">
+                            <label> Maybe</label>
+                        </div>
+                        <div class="selection">
+                            <input type="radio" name="danger" value="no" class="ratio">
+                            <label>No</label>
+                        </div>
+
+                    </div>
+                    <br>
+                    <label>Additional Comments
+                        <br>
+                        <textarea id="comments" name="comments"></textarea>
+                    </label>
+                    <br>
+                    <button type="submit" class="btn">Report</button>
+
+
+                </fieldset>
+            </form>
+
+    </main>
+
+    <footer>
+        &copy;Feather Weather | Attributions | Cooper Featherstone
+        <br>
+        <span id="date"></span>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>  

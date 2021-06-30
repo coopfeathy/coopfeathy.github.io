@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Cooper Feathersone">
+    <meta name="description" content="Preston Town Page for Feather Weather">
+    <title>Feather Weather Preston Town Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen"/>
+</head>
+
+<body>
+    <div class="banner">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</div>
+    <header>
+        <picture>
+            <img src="images/logo.png" alt="The site logo">
+        </picture>
+        <section class="headings">
+            <h1>Feather Weather</h1>
+            <div class="m">Weather to you from above and beyond!</div>
+        </section>
+        <a class="icon" onclick="toggleNav(); menu(this);">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </a>
+    </header>
+    <nav id="myTopnav" class="topnav">
+        <a href="home.html">Home</a>
+        <a href="preston.html" class="active">Preston</a>
+        <a href="sodasprings.html">Soda Springs</a>
+        <a href="fishhaven.html">Fish Haven</a>
+        <a href="stormcenter.html">Storm Center</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <main class="main1">
+        <h2>Preston Idaho</h2>
+        <div class="relative">
+            <img class="bannerPic" src="images/weatherbanner.png" alt="Banner Image">
+            <div class="absolute">
+                <h4>Weather Summary</h4>
+                <hr>
+                <p>Currently: <span id="curr-weather"></span></p>
+                <p>High: <span id="temp"></span></p>
+                <p>Wind Chill: <span id="windchill"></span></p>
+                <p>Humidity: <span id="humidity"></span></p>
+                <p>Wind Speed: <span id="windspeed"></span></p>
+            </div>
+        </div>
+        <br><br>
+        <h3 class="forecast">5 Day Forecast</h3>
+        <table>
+            <tr>
+                <th id="day1"></th>
+                <th id="day2"></th>
+                <th id="day3"></th>
+                <th id="day4"></th>
+                <th id="day5"></th>
+            </tr>
+            <tr>
+                <td>
+                    <img id="icon1" src="" alt=""/>
+                    <br>
+                    <span id="temp1"></span>&#176;F
+                </td>
+                <td>
+                    <img id="icon2" src="" alt=""/>
+                    <br>
+                    <span id="temp2"></span>&#176;F
+                </td>
+                <td>
+                    <img id="icon3" src="" alt=""/>
+                    <br>
+                    <span id="temp3"></span>&#176;F
+                </td>
+                <td>
+                    <img id="icon4" src="" alt=""/>
+                    <br>
+                    <span id="temp4"></span>&#176;F
+                </td>
+                <td>
+                    <img id="icon5" src="" alt=""/>
+                    <br>
+                    <span id="temp5"></span>&#176;F
+                </td>
+            </tr>
+        </table>
+        <br><br>
+        <div class="main">
+            <img width="300" class="mainpic" src="images/mainpic.jpg" alt="Pictue of the outdoors">
+            <h3>The FitnessGram Pacer Test</h3>
+            <p>The FitnessGram™ Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. The 20 meter pacer test will begin in 30 seconds. Line up at the start. The running speed starts slowly, but gets faster each minute after you hear this signal. Ding  A single lap should be completed each time you hear this sound. Ding  Remember to run in a straight line, and run as long as possible. The second time you fail to complete a lap before the sound, your test is over. The test will begin on the word start. On your mark, get ready, ding</p>
+        </div>
+        <div class="foot">
+            <img width="200" class="map" src="images/map.gif" alt="Map of the area">
+            <div class="right">
+                <h4>Feather Weather</h4>
+                <div class="flex">
+                    <img src="https://img.icons8.com/office/30/000000/address.png"/>
+                    <p>30 North 1st East<br>Preston, ID 83263</p>
+                </div>
+                <div class="flex">
+                    <img src="https://img.icons8.com/flat-round/30/000000/phone.png"/>
+                    <p>999.999.9999</p>
+                </div>
+                <div class="flex">
+                    <img src="https://img.icons8.com/fluent/30/000000/apple-mail.png"/>
+                    <p>featherweather@gmail.com</p>
+                </div>
+                <div class="flex">
+                    <a href="">
+                        <img src="https://img.icons8.com/office/40/000000/facebook-new.png"/>
+                    </a>
+                    <a href="">
+                        <img src="https://img.icons8.com/ultraviolet/40/000000/twitter-circled--v1.png"/>
+                    </a>
+                    <a href="">
+                        <img src="https://img.icons8.com/color/45/000000/youtube-music.png"/>
+                    </a>
+                    <a href="">
+                        <img src="https://img.icons8.com/plasticine/50/000000/instagram-new--v2.png"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy;Feather Weather | Attributions | Cooper Featherstone
+        <br>
+        <span id="date"></span>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/prestonapi.js"></script>
+</body>
+</html>  
