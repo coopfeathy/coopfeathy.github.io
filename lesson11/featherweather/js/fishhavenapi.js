@@ -1,5 +1,5 @@
-//Preston
-const weatherURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=3e08552e49dac3ae3cad2390c4518b7c";
+//Fish Haven
+const weatherURL = "https://api.openweathermap.org/data/2.5/weather?id=5585010&units=imperial&appid=3e08552e49dac3ae3cad2390c4518b7c";
 fetch(weatherURL)
   .then((response) => response.json())
   .then((jsObject) => {
@@ -15,7 +15,7 @@ fetch(weatherURL)
 
  
 //gets forecast
-const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=3e08552e49dac3ae3cad2390c4518b7c";
+const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5585010&units=imperial&appid=3e08552e49dac3ae3cad2390c4518b7c";
 fetch(forecastURL)
   .then((response) => response.json())
   .then((jsObject) => {
@@ -46,10 +46,10 @@ fetch(eventURL)
     })
     .then(function (jsonObject) {
         const towns = jsonObject["towns"];
-        const prestonInfo = towns.filter(town => town.name == "Preston");
-        for (let i = 0; i < prestonInfo[0].events.length; i++) {
+        const townInfo = towns.filter(town => town.name == "Fish Haven");
+        for (let i = 0; i < townInfo[0].events.length; i++) {
             let event = document.createElement('p');
-            event.textContent = prestonInfo[0].events[i];
+            event.textContent = townInfo[0].events[i];
             document.querySelector(".events-section").appendChild(event);
         }
     });
