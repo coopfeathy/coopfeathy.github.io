@@ -19,10 +19,9 @@ const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5607916
 fetch(forecastURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
 
     const filteredForecast = jsObject.list.filter(forecast => forecast.dt_txt.includes("18:00:00"));
-    console.log(filteredForecast);
+    
     const imagesrc = "https://openweathermap.org/img/w/";
     for (let i = 0; i < 5; i++) {
         document.querySelector("#icon" + (i + 1)).setAttribute("src", imagesrc + filteredForecast[i].weather[0].icon + ".png");
