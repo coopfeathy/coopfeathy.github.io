@@ -2,11 +2,10 @@
     "companies": [
         {"name": "Walmart", "logo": "images/walmart.png", "phone": "(479) 273-0060", "sitelink": "https://www.walmart.com"},
         {"name": "Matkins Flowers", "logo": "images/matkinsflowers.png", "phone": "(479) 273-2692", "sitelink": "https://www.matkinsflowers.com"},
-        {"name": "InfoTrax", "logo": "images/directory-infotrax.png", "phone": "801-431-4900", "sitelink": "https://www.infotraxsys.com/"},
-        {"name": "Kids on the Move", "logo": "images/highlight-kotm.png", "phone": "801-221-9930 ext 0", "sitelink": "https://www.kotm.org"},
-        {"name": "Landmark Catering", "logo": "images/directory-landmark.png", "phone": "801-471-2679", "sitelink": "https://landmarkcateringutah.com/"},
-        {"name": "Marriott Towne Place Suites", "logo": "images/directory-marriott.png", "phone": "801-225-4477", "sitelink": "https://www.marriott.com/hotels/travel/slcto-towneplace-suites-provo-orem/"},
-        {"name": "Mo’ Bettahs", "logo": "images/directory-mobettah.png", "phone": "801-960-4616", "sitelink": "https://mobettahs.com/"},
-        {"name": "Utah Transit Authority", "logo": "images/highlight-uta.png", "phone": "801-227-8965", "sitelink": "https://www.rideuta.com"}
+        {"name": "MOjO Marketing", "logo": "images/mojomarketing.png", "phone": "(479) 273-0888", "sitelink": "https://www.mojomkting.com"},
+        {"name": "NWACC", "logo": "images/nwacc.png", "phone": "(479) 636-9222", "sitelink": "https://www.nwacc.edu"},
+        {"name": "JB Hunt", "logo": "images/jbhunt.png", "phone": "(479) 820-0000", "sitelink": "https://www.jbhunt.com"},
+        {"name": "Sams Club", "logo": "images/samsclub.png", "phone": "(479) 621-5537", "sitelink": "https://www.samsclub.com"},
+        {"name": "Phat Tire", "logo": "images/phattire.png", "phone": "(479) 715-6170", "sitelink": "https://www.phattirebikeshop.com"}
     ]
 }

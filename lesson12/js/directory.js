@@ -1,7 +1,6 @@
 "use strict";
 
-// const requestURL = "https://raw.githubusercontent.com/RachelTwede/racheltwede.github.io/master/lesson12/json/companies.json";
-const requestURL = "json/direcotry.json";
+const requestURL = "https://coopfeathy.github.io/lesson12/json/directory.json";
 
 fetch(requestURL)
   .then(function (response) {
