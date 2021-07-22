@@ -5,9 +5,7 @@ h1,h2,h3,h4,h5,h6{
 p,a,div,td,span,form{
     font-family: 'Itim', cursive;
 }
-main{
-    background-color: #f2f2f2;
-}
+
 
 body {
     background-color: #fff;
