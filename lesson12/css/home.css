@@ -1,0 +1,105 @@
+h2, p{
+    text-align: center;
+}
+.directory {
+	margin: 0 auto;
+	font-size: 0.8rem;  
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.directory section {
+	margin: 0.5rem;
+	border: 1px solid #bbb;
+	padding: 0 1rem;
+	background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.directory section img {
+    width: 200px;
+    height: auto;
+    border: 1px solid #bbb;
+}
+
+
+.images{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.images img{
+    padding: 10px;
+}
+button {
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: auto;
+    cursor: pointer;
+    background-color: rgb(43, 160, 255);
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather {
+    text-align: center;
+}
+.forecast-table {
+    margin: 0 auto 1rem auto;
+}
+.forecast-table tr td {
+    padding: 0.5rem 1rem;
+}
+.forecast-table, .forecast-table tr, .forecast-table td {
+    border: 1px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+}
+.forecast-table th {
+    color: white;
+    background-color: rgb(43, 160, 255);
+    padding: 0.5rem 1rem;
+}
+
+/* Tablet Views ******************************/
+@media only screen and (min-width: 700px) {
+	.directory {
+		flex-direction: row;
+	}
+}
+
+/* Desktop Views ****************************/
+@media only screen and (min-width: 60em) {
+	.directory {
+		flex-direction: row;
+	}
+    .images{
+        flex-direction: row;
+    }
+}

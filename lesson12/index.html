@@ -34,7 +34,75 @@
     </nav>
 
     <main>
+        <h2>Images</h2>
+        <div class="images">
+            <img width="300" src="images/bentonville3.jpg" alt="The City of Bentonville">
+            <img width="300" src="images/bentonville10.jpg" alt="The City of Bentonville">
+            <img width="300" src="images/bentonville5.jpg" alt="The City of Bentonville">
+        </div>
+
+        <h2>Local Companies</h2>
+        <div class="directory"></div>
+
+        <h2>About Us</h2>
+        <div class="about">
+            <p>We are a membership organization that helps drive job creation, community experiences, and meaningful change in our community to move Bentonville forward for all. Our members, both local and national, are invested in creating a 21st century community by strengthening our 21st century economy.</p>
+            <a href="join.html"><button>Join Us</button></a>
+        </div>
         
+        <h2>Contact Info</h2>
+        <div class="row">
+            <img src="https://img.icons8.com/office/30/000000/address.png"/>
+            <p>702 SE 5th Street, Suite 40,<br>Bentonville, AR 72712</p>
+        </div>
+        <div class="row">
+            <img src="https://img.icons8.com/flat-round/30/000000/phone.png"/>
+            <p>+1 (479) 273-2841</p>
+        </div>
+        <div class="row">
+            <img src="https://img.icons8.com/fluent/30/000000/apple-mail.png"/>
+            <p>info@greaterbentonville.com</p>
+        </div>
+        
+        <h2>Media</h2>
+        <div class="row">
+            <a href="https://www.instagram.com/greaterbentonville"><img src="images/insta.png" alt="instagram"></a>
+            <a href="https://www.facebook.com/greaterbentonville"><img src="images/facebook.png" alt="Facebook"></a>
+        </div>
+        <h2>Upcoming Events</h2>
+        <div class="column">
+            <a href="http://business.greaterbentonville.com/events/details/fountains-at-lawrence-plaza-7202?type=communityevents">Fountains at Lawrence Plaza</a>
+            <a href="http://business.greaterbentonville.com/events/details/camp-soccer-7199?type=communityevents">Camp Soccer</a>
+            <a href="http://business.greaterbentonville.com/events/details/digimarcon-america-2021-digital-marketing-media-and-advertising-conference-7156?type=communityevents">DigiMarCon America 2021 - Digital Marketing, Media and Advertising Conference</a>
+            <a href="http://business.greaterbentonville.com/events/details/eleven-restaurant-at-crystal-bridges-museum-of-american-art-7263?type=communityevents">ELEVEN Restaurant at Crystal Bridges Museum of American Art</a>
+            <a href="http://business.greaterbentonville.com/events/details/24-hour-marketing-near-me-experiment-extravaganza-7258?type=communityevents">24 Hour Marketing Near Me Experiment Extravaganza</a>
+            <a href="http://business.greaterbentonville.com/events/details/lindsey-stirling-7216?type=communityevents">Lindsey Stirling</a>
+            <a href="http://business.greaterbentonville.com/events/details/2021-hight-jackson-new-teacher-appreciation-7162?type=communityevents">2021 Hight Jackson New Teacher Appreciation</a>
+            <a href="http://business.greaterbentonville.com/events/details/lady-a-7217?type=communityevents">Lady A</a>
+            <a href="http://business.greaterbentonville.com/events/details/2021-hight-jackson-bentonville-teacher-s-fair-7110?type=communityevents">2021 Hight Jackson Bentonville Teacher's Fair</a>
+        </div>
+        
+        <section class="weather">
+            <div>
+                <h2>Today's Weather</h2>
+                <p>Weather: <span id="weather"></span></p>
+                <p>Temperature: <span id="temp"></span>&#176;F</p>
+                <p>Humidity: <span id="humidity"></span></p>
+            </div>
+                <h2>Forecast</h2>
+                <table class="forecast-table">
+                    <tr>
+                        <th id="day1"></th>
+                        <th id="day2"></th>
+                        <th id="day3"></th>
+                    </tr>
+                    <tr>
+                        <td><span id="temp1"></span>&#176;F</td>
+                        <td><span id="temp2"></span>&#176;F</td>
+                        <td><span id="temp3"></span>&#176;F</td>
+                    </tr>
+                </table>
+        </section>
     </main>
 
     <footer>
@@ -44,5 +112,6 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/home.js"></script>
 </body>
 </html>  
