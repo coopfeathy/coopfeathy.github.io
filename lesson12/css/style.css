@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Goblin+One&family=Itim&display=swap');
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Goblin One', cursive;
+}
+p,a,div,td,span,form{
+    font-family: 'Itim', cursive;
+}
+main{
+    background-color: #f2f2f2;
+}
+
+body {
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #fff;
+    padding: 5px 0;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
+header img {
+    width: 80px;
+    height: auto;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+}
+
+.headings h1 {
+    font-size: 1.4rem;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(0, 0, 0);
+    margin: 6px 0;
+    transition: .3s;
+}
+.change .bar1 {
+    transform: rotate(-45deg) translate(-9px, 7px);
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    -moz-transform: rotate(-45deg) translate(-9px, 7px);
+    -o-transform: rotate(-45deg) translate(-9px, 7px);
+}
+.change .bar2 {opacity: 0;}
+.change .bar3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    -moz-transform: rotate(45deg) translate(-8px, -8px);
+    -o-transform: rotate(45deg) translate(-8px, -8px);
+}
+.topnav a {
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a.active {
+    background-color: rgb(43, 160, 255);
+    color: rgb(0, 0, 0);
+} 
+
+footer{
+    background: rgb(43, 160, 255);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* smaller viewports */
+@media only screen and (max-width: 32.5em) {
+    #myTopnav{
+        display: none;
+    }
+    .icon {
+        margin:25px;
+    }
+}
+
+/* Larger viewports */
+@media only screen and (min-width: 32.5em) {
+    header img {
+        width: 200px;
+    }
+
+    .headings h1 {
+        font-size: 3rem;
+    }
+
+    .icon {
+        display: none;
+        margin:25px;
+    }
+
+    .topnav {
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #333;
+    }
+
+    .topnav a:hover {
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+    }
+}
+
+/* Tablet Views ******************************/
+@media only screen and (min-width: 37.5em) {
+	
+}
+
+/* Desktop Views ****************************/
+@media only screen and (min-width: 60em) {
+    
+}
